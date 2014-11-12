@@ -11,35 +11,90 @@
 	<body>
 		<div id="header">
 		</div>
-
 		<div class="container">
-			<form action="answers.html">
+			<div id="not_answered" hidden="true">
+				<center>
+					<small>Sorry but you must answer all the questions on the questionnarie</small>
+				</center>
+			</div>
+			<form action="answers.html" id="answers">
 				<div id="team_size">
 					<div class="row">
+						<!--question 1-->
 						<div class="col-xs-2">
 							<h5><b>1- What is the size of the team?</b></h5>
 						</div>
 						<div class="col-xs-2">
-							<input type="radio" name="team_size" id="small"><label for="small">smaller than 3</label>
+							<input type="radio" name="team_size" id="small"><label class="span_radio" for="small">&lt 3</label>
 						</div>
 						<div class="col-xs-2">
-							<input type="radio" name="team_size" id="small-medium"><label for="small-medium">bigger than 3, smaller than 10</label>
+							<input type="radio" name="team_size" id="small-medium"><label class="span_radio" for="small-medium">&gt 3, &lt 10</label>
 						</div>
 						<div class="col-xs-2">
-							<input type="radio" name="team_size" id="medium"><label for="medium">bigger than 10, smaller than 30</label>
+							<input type="radio" name="team_size" id="medium"><label class="span_radio" for="medium">&gt 10, &lt 30</label>
 						</div>
 						<div class="col-xs-2">
-							<input type="radio" name="team_size" id="medium-big"><label for="medium-big">bigger than 30, smaller than 100</label>
+							<input type="radio" name="team_size" id="medium-big"><label class="span_radio" for="medium-big">&gt 30, &lt 100</label>
 						</div>
 						<div class="col-xs-2">
-							<input type="radio" name="team_size" id="big"><label for="big">bigger than 100</label>
+							<input type="radio" name="team_size" id="big"><label class="span_radio" for="big">&gt 100</label>
+						</div>
+					</div>
+					<!--question 2-->
+					<div id="team_change">
+						<div class="row">
+							<div class="col-xs-2">
+								<h5><b>2- What is the probability of a team change?</b></h5>
+							</div>
+							<div class="col-xs-2">
+								<input type="radio" name="team_change" id="small"><label class="span_radio" for="small">None</label>
+							</div>
+							<div class="col-xs-2">
+								<input type="radio" name="team_change" id="small-medium"><label class="span_radio" for="small-medium">Small</label>
+							</div>
+							<div class="col-xs-2">
+								<input type="radio" name="team_change" id="medium"><label class="span_radio" for="medium">Medium</label>
+							</div>
+							<div class="col-xs-2">
+								<input type="radio" name="team_change" id="medium-big"><label class="span_radio" for="medium-big">High</label>
+							</div>
+							<div class="col-xs-2">
+								<input type="radio" name="team_change" id="big"><label class="span_radio" for="big">Certainty</label>
+							</div>
+						</div>
+					</div>
+					<!--question 3-->
+					<div id="documentation_need">
+						<div class="row">
+							<div class="col-xs-2">
+								<h5><b>3- How much documentation the client asks</b></h5>
+							</div>
+							<div class="col-xs-2">
+								<input type="radio" name="documentation_need" id="small"><label class="span_radio" for="small">None</label>
+							</div>
+							<div class="col-xs-2">
+								<input type="radio" name="documentation_need" id="small-medium"><label class="span_radio" for="small-medium">Small</label>
+							</div>
+							<div class="col-xs-2">
+								<input type="radio" name="documentation_need" id="medium"><label class="span_radio" for="medium">Medium</label>
+							</div>
+							<div class="col-xs-2">
+								<input type="radio" name="documentation_need" id="medium-big"><label class="span_radio" for="medium-big">High</label>
+							</div>
+							<div class="col-xs-2">
+								<input type="radio" name="documentation_need" id="big"><label class="span_radio" for="big">All</label>
+							</div>
 						</div>
 					</div>
 				</div>
 			</form>
+			<center>
+			<button class="btn btn-lg btn-primary btn-block form_field" type="submit" id="send_questions">Answer questions</button>
+			</center>
 		</div>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 		<script src="dist/js/bootstrap.min.js"></script>
 		<script src="dist/js/headerEFooter.js"></script>
+		<script src="dist/js/questions.js"></script>
 	</body>
 </html>
