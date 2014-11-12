@@ -1,4 +1,12 @@
 .form_field{
-	width: 40%;
-	margin-top: 4px;
+width: 40%;
+margin-top: 4px;
+}
+
+body{
+background-color: #E7E7E7;
+}
+
+.space_top{
+	margin-top: 1%;
 }

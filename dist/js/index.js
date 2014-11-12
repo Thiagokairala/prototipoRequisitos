@@ -1,6 +1,6 @@
 $(document).ready(function() {
 	$('#login').click(function() {
-		var name = /thiagokairala/,
+		var name = /user/,
 			password = /123456/,
 			formName = $('#user_name').val(),
 			formPassword = $('#password').val();
